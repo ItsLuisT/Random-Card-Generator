@@ -1,3 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 body {
   background-color: green;
 }
@@ -7,7 +9,38 @@ body {
   height: 400px;
   margin: auto;
   margin-top: 70px;
-  border-radius: 25px;
+  border-radius: 20px;
+  position: relative;
 }
-.card {
+#top-suit {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  size: 50px;
+  font-size: 80px;
+}
+#bottom-suit {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  font-size: 80px;
+}
+#card-number {
+  top: 120px;
+  left: 100px;
+  position: absolute;
+  font-size: 90px;
+}
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
